@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "Baguette";
+    src: url(../fonts/MondayFeelings-7BD2l.ttf);
+}
+
+@font-face {
+    font-family: "Coco";
+    src: url(../fonts/Coco-Gothic-Regular-trial.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(250, 237, 210);
+    font-family: Baguette;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.but {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#header{
+    font-family: Coco;
+    min-height: 100px;
+    background-image: linear-gradient(rgb(167, 139, 88), rgb(56, 38, 10));
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.asd {
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: -moz-radial-gradient(white, rgb(190, 125, 18));
+}
+
+.span{
+    font-size: 10px;
+}
+
+.myphoto{
+    width: 700px;
+    height: 400px;
+    padding-left: 0;
+    border-radius: 25px;
+    border: solid 3px rgb(61, 44, 13);
+}
+
+.home{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#about0{
+    background-image: linear-gradient(rgb(201, 188, 157),rgb(248, 243, 238) 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    background-image: url(../img/bg2.png);
+    height: 900px;
+}
+
+#work{
+    font-family: Coco;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-image: linear-gradient(rgb(167, 139, 88), rgb(56, 38, 10));
+}
+
+#show{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 480px;
+    padding-left: 40px;
+
+}
+
+.food{
+    height: 400px;
+    width: 400px;
+}
+
+#proc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(250, 237, 210) 30%, white 70%);
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#rev{
+    display: flex;
+    justify-content: center;
+    font-family: Baguette;
+    font-size: 30px;
+}
+
+#filling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Baguette;
+    flex-direction: row;
+    text-align: left;
+    background-color: rgb(250,237,210);
+    height: 600px;
+}
+
+.review {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#review1:checked ~ #content1,
+#review2:checked ~ #content2,
+#review3:checked ~ #content3 {
+    display: block;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.clients{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    border: solid 3px black;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    font-family: Baguette;
+    font-size: 30px;
+}
+
+.text{
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#asd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+input[type="name"] {
+    display: block;
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+    font-family: Coco;
+}
+
+input[type="mail"] {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+    font-family: Coco;
+}
+
+input[type="theme"] {
+    width: 660px;
+    height: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+    font-family: Coco;
+}
+
+input[type="message"] {
+    display: flex;
+    width: 660px;
+    height: 400px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+    font-family: Coco;
+}
+
+button{
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+    font-family: Coco;
+    margin-left: 220px;
+    margin-top: 30px;
+    background-color: rgb(170, 170, 252);
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(80, 80, 252);
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background-color: rgb(231, 184, 130);
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cont1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.basement{
+    height: 150px;
+    font-family: Coco;
+    color: rgb(0, 0, 0);
+    padding: 70px;
+    padding-left: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small{
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-right: 170px;
+}
+
+#goback{
+    border-radius: 50px;
+    background-color: rgb(53, 53, 53);
+    max-width: 50px;
+    text-align: center;
+    padding: 3px;
+    position: sticky;
+    bottom: 30px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    padding-bottom: 8px;
+    margin-left: 15px;
+}
